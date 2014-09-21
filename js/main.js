@@ -5,4 +5,8 @@ $(document).ready(function(){
 		$('#description').toggle().addClass('animated fadeIn');
 		$('#subheader').toggle().addClass('animated fadeIn');
 	})
+
+	$('#title').click(function(){
+		$('#fullvid').toggle().addClass('animated fadeIn');
+	})
 })

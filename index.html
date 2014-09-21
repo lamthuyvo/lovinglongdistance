@@ -11,10 +11,6 @@
 	<!-- icons -->
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<!-- lightbox -->
-	<link rel="stylesheet" href="vendor/bootstrap-lightbox/bootstrap-lightbox.min.css">
-	<script src="vendor/bootstrap-lightbox/bootstrap-lightbox.min.js"></script>
-
 	<!-- styles -->
 	<link rel="stylesheet" href="vendor/normalize.css">
 	<link rel="stylesheet" href="vendor/animate.css">
@@ -33,16 +29,18 @@
 		<header>
 			<div id="about">About</div>
 
-			<a href="#headerVideo" id="title" data-toggle="lightbox" data-target="#lightbox">
+			<div id="title">
 				<div class="loving">Loving</div>
 				<div class="smallcaps">Long-Distance</div>
 				<i class="fa fa-play-circle" id="play"></i>
-			</a>
+			</div>
 
 			<video id="video" preload="auto" data-setup="{}" webkit-playsinline="" autoplay="" src="assets/door_small.mp4" style="width: 100%;" loop="">
 			</video>
 
-			<iframe src="http://player.vimeo.com/video/105646584?title=0&amp;byline=0&amp;portrait=0" width="500" height="211" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/105646584">'Transition' Documentary</a> from <a href="http://vimeo.com/digitaldoes">Digitaldoes</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+			<iframe id="fullvid" src="http://player.vimeo.com/video/105646584?title=0&amp;byline=0&amp;portrait=0" width="100%" height="700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 
 
 		</header>

@@ -21,6 +21,7 @@ a {
 	top: 300px;
 	left: 40%;
 	color: $magenta;
+	cursor: pointer;
 	.loving {
 		font-family: 'Leckerli One', cursive;
 		font-size: 4.5em;
@@ -54,6 +55,11 @@ a {
 	padding: 20px;
 }
 
+#fullvid {
+	position: absolute;
+	display: none;
+}
+
 
 .signup {
 	font-size: 1.3em;
@@ -80,4 +86,3 @@ input {
 	margin: 0 auto;
 	font-size: 14pt;
 }
-

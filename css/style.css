@@ -13,7 +13,8 @@ a {
   position: absolute;
   top: 300px;
   left: 40%;
-  color: #CC6699; }
+  color: #CC6699;
+  cursor: pointer; }
   #title .loving {
     font-family: 'Leckerli One', cursive;
     font-size: 4.5em; }
@@ -39,6 +40,10 @@ a {
   color: #CC6699;
   text-align: right;
   padding: 20px; }
+
+#fullvid {
+  position: absolute;
+  display: none; }
 
 .signup {
   font-size: 1.3em;
