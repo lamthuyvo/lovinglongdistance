@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	// document.getElementById("emailbox").focus();
 
 	$('#title').click(function(){
 		$('.full-vid-wrapper').toggle().addClass('animated fadeIn');
@@ -7,7 +6,7 @@ $(document).ready(function(){
 	})
 
 	$('#exit-vid').click(function(){
-		console.log('exit been clicked!!');
 		$('.full-vid-wrapper').hide();
+		$('#fullvid').removeAttr('src');
 	})
 })
