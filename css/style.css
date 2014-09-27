@@ -47,7 +47,8 @@ a {
     top: 0px;
     right: 0px;
     color: #CC6699;
-    z-index: 999; }
+    z-index: 999;
+    padding: 5px; }
 
 .signup {
   font-size: 1.3em;
