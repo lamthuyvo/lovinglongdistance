@@ -48,19 +48,33 @@ a {
 	display: none;
 }
 
-#about {
-	cursor: pointer;
-	color: $magenta;
-	text-align: right;
-	padding: 20px;
-}
+// #about {
+// 	position: fixed;
+// 	cursor: pointer;
+// 	color: $magenta;
+// 	right: 0px;
+// 	padding: 20px;
+// 	z-index: 100;
+// }
 
-#fullvid {
+.full-vid-wrapper {
+	display: none;
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	display: none;
+	width: 100%;
+	height: 700px;
+	#exit-vid {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		color: $magenta;
+		z-index: 999;
+		padding: 5px;
+		cursor: pointer;
+	}
 }
+
 
 
 .signup {
