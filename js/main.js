@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+	
+	var	screen_width = window.innerWidth;
 	//code to play trailer for project 
 	$('#title').click(function(){
 		$('.full-vid-wrapper').toggle().addClass('animated fadeIn');
@@ -11,13 +12,12 @@ $(document).ready(function(){
 		$('.full-vid-wrapper').hide();
 		$('#fullvid').removeAttr('src');
 	})
-
-
-	// this is to set the vimeo player height for the trailer
-	var	screen_width = window.innerWidth;
-
+	
+	// this is to set the vimeo player heights for the trailer
 	if (screen_width < 500){
 		$('.vimeo-iframe2').attr('height', (screen_width/1.777777));
+		$('#video').hide();
+
 	} else {
 		$('.vimeo-iframe2').attr('height', 280);
 	}

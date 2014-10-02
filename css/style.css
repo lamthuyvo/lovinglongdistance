@@ -23,7 +23,9 @@ header {
   @media screen and (max-width: 768px) {
     #title {
       top: 10%;
-      font-size: 16px; } }
+      font-size: 16px;
+      position: relative;
+      cursor: none; } }
   @media screen and (max-width: 480px) {
     #title {
       top: 2%; }
@@ -46,9 +48,14 @@ header {
       left: -20px; }
     #title #titlecontainer:hover {
       color: #FFFFFF; }
-
-#play {
-  font-size: 3em; }
+      @media screen and (max-width: 768px) {
+        #title #titlecontainer:hover {
+          color: #CC6699; } }
+    #title #titlecontainer #play {
+      font-size: 3em; }
+      @media screen and (max-width: 768px) {
+        #title #titlecontainer #play {
+          display: none; } }
 
 .full-vid-wrapper {
   display: none;
@@ -65,6 +72,16 @@ header {
     z-index: 999;
     padding: 5px;
     cursor: pointer; }
+
+@media screen and (max-width: 768px) {
+  #video {
+    display: none; } }
+
+#video-mobile {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    #video-mobile {
+      display: inline-block; } }
 
 .panel {
   display: block;
