@@ -22,6 +22,8 @@ $(document).ready(function(){
 		$('.vimeo-iframe2').attr('height', 280);
 	}
 
+	$('.vimeo-iframe').attr('height', (screen_width/1.777777));
+
 	//for googleform
 	$('#ss-form').submit(function(){
        $(this).hide();
