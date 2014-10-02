@@ -86,7 +86,7 @@ header {
 .panel {
   display: block;
   padding: 30px;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   font-size: 14pt; }
   .panel .textbox {
@@ -94,6 +94,20 @@ header {
   .panel h1 {
     color: #CC6699;
     text-align: center; }
+  .panel h2 {
+    color: #5F5F5F;
+    font-size: 25px;
+    line-height: 1em; }
+  .panel h3 {
+    color: #A9A9A9;
+    font-size: 14px;
+    line-height: 1em; }
+
+.caption {
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  margin: 10px 0;
+  color: #A9A9A9; }
 
 #google-form .ss-q-title {
   font-family: 'Karla', sans-serif;
@@ -103,7 +117,7 @@ header {
   font-family: 'Karla', sans-serif;
   font-size: 15px; }
 #google-form .ss-q-help {
-  ffont-family: 'Karla', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 12px;
   margin: 10px 0;
   color: #A9A9A9; }

@@ -1,6 +1,7 @@
 // variables
 $magenta: #CC6699;
 $body-font: #5F5F5F;
+$light-gray: #A9A9A9;
 $p-font: 'Karla', sans-serif;
 $white: #FFFFFF;
 $break-small: 480px;
@@ -106,7 +107,7 @@ header{
 #video-mobile{
 	display:none;
 	@media screen and (max-width: $break-large) {
-				display:inline-block;
+		display:inline-block;
 	}
 
 }
@@ -114,7 +115,7 @@ header{
 .panel {
 	display: block;
 	padding: 30px;
-	max-width: 500px;
+	max-width: 600px;
 	margin: 0 auto;
 	font-size: 14pt;
 	.textbox{
@@ -124,6 +125,23 @@ header{
 		color: $magenta;
 		text-align: center;
 	}
+	h2{
+		color: $body-font;
+		font-size: 25px;
+		line-height: 1em;
+	}
+	h3{
+		color: $light-gray;
+		font-size: 14px;
+		line-height: 1em;
+	}
+}
+
+.caption {
+        font-family: $p-font;
+		font-size: 12px;
+		margin: 10px 0;
+		color: $light-gray;
 }
 
 #google-form{
@@ -139,7 +157,7 @@ header{
     }
      
     .ss-q-help {
-        ffont-family: $p-font;
+        font-family: $p-font;
 		font-size: 12px;
 		margin: 10px 0;
 		color: #A9A9A9;
