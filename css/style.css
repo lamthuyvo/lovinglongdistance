@@ -1,39 +1,54 @@
 body {
   font-family: 'Karla', sans-serif;
   margin: 0px;
-  color: #000000;
+  color: #5F5F5F;
   font-size: 16pt;
-  text-align: center; }
+  text-align: left; }
 
 a {
   color: #CC6699;
   text-decoration: none; }
 
+header {
+  position: relative; }
+
 #title {
   position: absolute;
-  top: 300px;
-  left: 40%;
   color: #CC6699;
-  cursor: pointer; }
-  #title .loving {
-    font-family: 'Leckerli One', cursive;
-    font-size: 4.5em; }
-  #title .smallcaps {
+  cursor: pointer;
+  float: left;
+  width: 100%;
+  top: 20%;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    #title {
+      top: 10%;
+      font-size: 16px; } }
+  @media screen and (max-width: 480px) {
+    #title {
+      top: 2%; }
+      #title #subheader {
+        display: none; } }
+  #title #titlecontainer {
+    margin: 0 auto;
     position: relative;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    font-size: 0.7em;
-    font-weight: 700;
-    top: -20px;
-    left: -20px; }
-  #title:hover {
-    color: #FFFFFF; }
+    text-align: center; }
+    #title #titlecontainer .loving {
+      font-family: 'Leckerli One', cursive;
+      font-size: 4.5em; }
+    #title #titlecontainer .smallcaps {
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      font-size: 0.7em;
+      font-weight: 700;
+      top: -20px;
+      left: -20px; }
+    #title #titlecontainer:hover {
+      color: #FFFFFF; }
 
 #play {
   font-size: 3em; }
-
-#description {
-  display: none; }
 
 .full-vid-wrapper {
   display: none;
@@ -51,23 +66,51 @@ a {
     padding: 5px;
     cursor: pointer; }
 
-.signup {
-  font-size: 1.3em;
-  padding-top: 20px; }
-  .signup p {
-    margin: 10px; }
-
-input {
-  border: none;
-  border-bottom: 1px solid #CC6699;
-  line-height: 2em;
-  color: #CC6699; }
-  input:focus {
-    outline: none; }
-
-.tagline {
+.panel {
   display: block;
   padding: 30px;
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
   font-size: 14pt; }
+  .panel .textbox {
+    text-align: left; }
+  .panel h1 {
+    color: #CC6699;
+    text-align: center; }
+
+#google-form .ss-q-title {
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  margin: 25px 0 0 0; }
+#google-form .ss-q-item-label {
+  font-family: 'Karla', sans-serif;
+  font-size: 15px; }
+#google-form .ss-q-help {
+  ffont-family: 'Karla', sans-serif;
+  font-size: 12px;
+  margin: 10px 0;
+  color: #A9A9A9; }
+#google-form .ss-q-secondary-text {
+  font-family: 'Karla', sans-serif;
+  font-size: 13px; }
+#google-form .required-message {
+  font-family: 'Karla', sans-serif;
+  font-size: 10px; }
+#google-form #lld-submit-page {
+  display: none;
+  height: 302px;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  padding-top: 14%;
+  line-height: 30px;
+  font-weight: bold;
+  color: #CC6699; }
+#google-form #entry_505003757, #google-form #entry_1452629804, #google-form #entry_141792637, #google-form #entry_591728580 {
+  width: 100%; }
+#google-form .ss-choice-item {
+  font-size: 14px;
+  list-style-type: none;
+  margin: 10px 0; }
+#google-form #ss-submit {
+  margin: 10px 0; }

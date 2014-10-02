@@ -1,14 +1,18 @@
 // variables
 $magenta: #CC6699;
-$body-font: #000000;
+$body-font: #5F5F5F;
+$p-font: 'Karla', sans-serif;
 $white: #FFFFFF;
+$break-small: 480px;
+$break-large: 768px;
+
 
 body {
 	font-family: 'Karla', sans-serif;
 	margin: 0px;
 	color: $body-font;
 	font-size: 16pt;
-	text-align: center;
+	text-align: left;
 }
 
 a {
@@ -16,28 +20,52 @@ a {
 	text-decoration: none;
 }
 
+header{
+	position:relative;
+
+}
+
 #title {
 	position: absolute;
-	top: 300px;
-	left: 40%;
 	color: $magenta;
 	cursor: pointer;
-	.loving {
+	float: left;
+	width:100%;
+	top:20%;
+	text-align: center;
+	@media screen and (max-width: $break-large) {
+		top:10%;
+		font-size:16px;
+		
+  	}
+  	@media screen and (max-width: $break-small) {
+		top:2%;
+		#subheader{
+			display:none;
+		}
+  	}
+  	#titlecontainer{
+  		margin: 0 auto;
+		position: relative;
+		text-align: center;
+  		.loving {
 		font-family: 'Leckerli One', cursive;
 		font-size: 4.5em;
-	}
-	.smallcaps {
-		position: relative;
-		text-transform: uppercase;
-		letter-spacing: 0.5em;
-		font-size: 0.7em;
-		font-weight: 700;
-		top: -20px;
-		left: -20px;
-	}
-	&:hover {
-		color: $white;
-	}
+		}
+		.smallcaps {
+			position: relative;
+			text-transform: uppercase;
+			letter-spacing: 0.5em;
+			font-size: 0.7em;
+			font-weight: 700;
+			top: -20px;
+			left: -20px;
+		}
+		&:hover {
+			color: $white;
+		}
+  	}
+
 }
 
 #play {
@@ -45,17 +73,9 @@ a {
 }
 
 #description {
-	display: none;
+	// display: none;
 }
 
-// #about {
-// 	position: fixed;
-// 	cursor: pointer;
-// 	color: $magenta;
-// 	right: 0px;
-// 	padding: 20px;
-// 	z-index: 100;
-// }
 
 .full-vid-wrapper {
 	display: none;
@@ -75,30 +95,77 @@ a {
 	}
 }
 
-
-
-.signup {
-	font-size: 1.3em;
-	padding-top: 20px;
-	p {
-		margin: 10px;
-	}
-}
-
-input {
-	border: none;
-	border-bottom: 1px solid $magenta;
-	line-height: 2em;
-	color: $magenta;
-	&:focus {
-		outline: none;
-	}
-}
-
-.tagline {
+.panel {
 	display: block;
 	padding: 30px;
-	width: 500px;
+	max-width: 500px;
 	margin: 0 auto;
 	font-size: 14pt;
+	.textbox{
+	text-align: left;
+	}
+	h1{
+		color: $magenta;
+		text-align: center;
+	}
+}
+
+#google-form{
+	.ss-q-title{
+            font-family:$p-font;
+            font-size:15px;
+            margin: 25px 0 0 0;
+        }
+     
+    .ss-q-item-label{
+        font-family:$p-font;
+        font-size:15px;
+    }
+     
+    .ss-q-help {
+        ffont-family: $p-font;
+		font-size: 12px;
+		margin: 10px 0;
+		color: #A9A9A9;
+    }
+     
+    .ss-q-secondary-text {
+        font-family:$p-font;
+        font-size:13px;
+    }
+     
+    .required-message{ 
+        font-family: $p-font;
+        font-size:10px;
+    }
+
+    #lld-submit-page{
+        display: none;
+        height: 302px;
+        text-align: center;
+        font-family: $p-font;
+        font-size: 20px;
+        padding-top: 14%;
+        line-height: 30px;
+        font-weight: bold;
+        color: $magenta;
+    
+    }
+
+    #entry_505003757, 
+    #entry_1452629804,
+    #entry_141792637, 
+    #entry_591728580 {
+        width: 100%;
+    }
+
+	.ss-choice-item {
+		font-size:14px;
+		list-style-type: none;
+		margin: 10px 0;
+	}
+
+	#ss-submit{
+		margin: 10px 0;
+	} 
 }
