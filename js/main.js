@@ -14,12 +14,12 @@ $(document).ready(function(){
 	})
 	
 	// this is to set the vimeo player heights for the trailer
-	if (screen_width < 500){
+	if (screen_width < 600){
 		$('.vimeo-iframe2').attr('height', (screen_width/1.777777));
 		$('#video').hide();
 
 	} else {
-		$('.vimeo-iframe2').attr('height', 280);
+		$('.vimeo-iframe2').attr('height', 337);
 	}
 
 	$('.vimeo-iframe').attr('height', (screen_width/1.777777));
