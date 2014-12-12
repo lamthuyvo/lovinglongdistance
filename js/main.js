@@ -1,16 +1,19 @@
 $(document).ready(function(){
 	
 	var	screen_width = window.innerWidth;
+	
 	//code to play trailer for project 
-	$('#title').click(function(){
+	$('#title').on("click",function(){
+		$('#title').css('display', 'none')
 		$('.full-vid-wrapper').toggle().addClass('animated fadeIn');
 		$('#fullvid').attr('src', 'http://player.vimeo.com/video/107348115?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179&amp;autoplay=1');
 	})
 
 	//code to exit video
-	$('#exit-vid').click(function(){
+	$('#exit-vid').on("click",function(){
 		$('.full-vid-wrapper').hide();
 		$('#fullvid').removeAttr('src');
+		$('#title').css('display', 'block')
 	})
 	
 	// this is to set the vimeo player heights for the trailer
@@ -30,4 +33,4 @@ $(document).ready(function(){
        $('#lld-submit-page').show();
 	});
 		
-})
+});

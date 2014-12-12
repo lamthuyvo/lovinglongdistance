@@ -69,8 +69,12 @@
 				</div>
 			</div>
 
-			<video id="video"  preload="auto" data-setup="{}" webkit-playsinline="" autoplay="" src="assets/banner-video.mp4" style="width: 100%;" loop="yes">
+			<video id="video"  preload="auto" data-setup="{}" webkit-playsinline="" autoplay=""  style="width: 100%;" loop="yes">
+				<source src="assets/banner-video.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
+				<source src="assets/banner-video.webm" type="video/webm" /><!-- Firefox / Opera / Chrome10 -->
+				<source src="assets/banner-video.ogv" type="video/ogg" /><!-- Firefox / Opera / Chrome10 -->
 			</video>
+
 
 			<div class="full-vid-wrapper">
 				<i class="fa fa-times" id="exit-vid"></i>
@@ -86,7 +90,7 @@
 			<div class="textbox">
 				<h1>About</h1>
 				
-				<iframe class="vimeo-iframe2" id="video-mobile" src="//player.vimeo.com/video/107348115?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179" width="100%"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<iframe class="vimeo-iframe2" id="video-mobile" src="http://player.vimeo.com/video/107348115?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179" width="100%"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				
 				<p>In the absence of physical closeness, how do you build a narrative and sustain the love that you have with someone else through just words or other snippets of communication?</p>
 				<p>Loving Long-Distance is a project that explores these communications through a video series and an app.</p>
@@ -101,7 +105,7 @@
 				<h1>The Videos</h1>
 				<p>We want to produce a video web series to tell the stories of two individuals and their attempts to bridge physical distances with written and verbal accounts. The series will start with the story a Vietnamese couple in the 1970s and their 9-year-long letter exchange between war-torn Saigon, Vietnam, and Hannover, Germany.</p>
 				
-				<iframe class="vimeo-iframe2" src="//player.vimeo.com/video/107093087?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<iframe class="vimeo-iframe2" src="http://player.vimeo.com/video/107093087?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179" width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 				<p>We're hoping to tell more stories like this — like those of a deported mother and her child, or of the professional couple that is pursuing exciting careers in different places. We would love to hear about your story. Please feel free to get in touch with us: wearelovinglongdistance [at] gmail [dot] com</p>
 
@@ -273,6 +277,8 @@
 
 
 	</div>
+
+
 
 <!-- Facebook social -->
 <script>

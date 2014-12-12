@@ -19,7 +19,8 @@ header {
   float: left;
   width: 100%;
   top: 20%;
-  text-align: center; }
+  text-align: center;
+  z-index: 9999; }
   @media screen and (max-width: 768px) {
     #title {
       top: 10%;
